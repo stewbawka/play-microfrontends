@@ -5,6 +5,11 @@
     See https://single-spa.js.org/docs/layout-definition/ for more information.
 
   -->
+ 
+  <nav>
+    <a href="/me">My Settings</a>	
+    <a href="/login">Login</a>	
+  </nav>
 
   <!-- Example layouts you might find helpful:
 
@@ -19,6 +24,12 @@
 
   <main>
     <route default>
+      <application name="@discostudebaker/auth"></application>
+    </route>
+    <route path="me">
+      <application name="@discostudebaker/auth"></application>
+    </route>
+    <route path="login">
       <application name="@discostudebaker/auth"></application>
     </route>
   </main>
